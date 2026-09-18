@@ -1,0 +1,58 @@
+{
+  "protocol_id": "OCRDA-v7.4.4-frozen-dataset3-external-eval-v1",
+  "created_utc": "2026-09-10T06:50:43.863497+00:00",
+  "model_version": "OCRDA-v7.4.4 frozen formal evaluation",
+  "methods": [
+    "source_only",
+    "coral",
+    "mmd",
+    "ccda_no_ontology",
+    "relation_blind",
+    "shuffled_ontology",
+    "ocrda_no_reliability",
+    "ocrda_no_topology",
+    "full_ocrda"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "dataset3_partition": "02_recommended_final_external_test_balanced_150",
+  "dataset3_counts": {
+    "BG": 50,
+    "Healthy": 50,
+    "WSSV": 50,
+    "total": 150
+  },
+  "dataset3_lock_manifest_sha256": "d42febf3efe1af7aa9359f351708e57ea1d4e604272d6269d9f540f6bfb75662",
+  "class_order": [
+    "BG",
+    "Healthy",
+    "WSSV"
+  ],
+  "image_size": 224,
+  "evaluation_transform": "Resize(int(224*1.12)) -> CenterCrop(224) -> ToTensor -> ImageNet normalize",
+  "primary_endpoint": "macro_f1",
+  "secondary_endpoints": [
+    "BG_f1",
+    "Healthy_f1",
+    "WSSV_f1",
+    "balanced_accuracy",
+    "mcc",
+    "accuracy"
+  ],
+  "forbidden": [
+    "training",
+    "adaptation",
+    "hyperparameter_tuning",
+    "checkpoint_selection",
+    "seed_selection",
+    "threshold_tuning",
+    "test-time adaptation"
+  ],
+  "model_requirement": "exact frozen compact checkpoints from the completed 45-run formal evaluation suite",
+  "no_retraining_fallback": true
+}

@@ -1,0 +1,7 @@
+# STEP 0 — INVENTORY ONLY. Does NOT run Dataset3 inference.
+from pathlib import Path
+import subprocess, sys
+hits=list(Path('/kaggle/input').rglob('external_eval_runner.py'))
+if not hits: raise RuntimeError('External eval package not found.')
+runner=sorted(hits,key=lambda p:len(str(p)))[0]
+subprocess.run([sys.executable,str(runner),'--inventory-only'],check=False)

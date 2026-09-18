@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Raw data / archives
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.tif
+*.tiff
+*.webp
+
+# Model checkpoints / large binary artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.safetensors
+models/
+checkpoints/
+weights/
+
+# Kaggle / experiment temporary outputs
+kaggle/working/
+*_RESUME_LATEST*
+*_MODEL*_SEED_*
+OCRDA_v744_FROZEN_45_MODELS_BUNDLE*
+
+# Local logs / temporary files
+*.log
+*.tmp
+*.bak
+~$*

@@ -1,0 +1,12 @@
+# OCRDA-v7.4.4 — LOCKED DATASET3 EXTERNAL EVALUATION
+# Inference only. One seed (9 frozen models) per execution. NO TRAINING / NO TUNING.
+from pathlib import Path
+import subprocess, sys
+hits=list(Path('/kaggle/input').rglob('external_eval_runner.py'))
+if not hits:
+    raise RuntimeError('Không tìm thấy package OCRDA_v7_4_4_FROZEN_DATASET3_EXTERNAL_EVAL_Kaggle trong Input.')
+runner=sorted(hits,key=lambda p:len(str(p)))[0]
+print('RUNNER =',runner)
+cmd=[sys.executable,str(runner),'--max-new-seeds','1','--batch-size','32','--workers','2']
+print('CMD =',' '.join(cmd))
+subprocess.run(cmd,check=True)

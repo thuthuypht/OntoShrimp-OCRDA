@@ -1,0 +1,194 @@
+{
+  "version": "OCRDA-v7.4.4-frozen-baselines-ablations-v1",
+  "updated_utc": "2026-09-09T10:08:59.083617+00:00",
+  "batch": "B",
+  "current_seed": null,
+  "current_method": "BATCH_COMPLETE",
+  "completed": [
+    {
+      "method": "source_only",
+      "seed": 42
+    },
+    {
+      "method": "source_only",
+      "seed": 123
+    },
+    {
+      "method": "source_only",
+      "seed": 2026
+    },
+    {
+      "method": "source_only",
+      "seed": 3407
+    },
+    {
+      "method": "source_only",
+      "seed": 7777
+    },
+    {
+      "method": "coral",
+      "seed": 42
+    },
+    {
+      "method": "coral",
+      "seed": 123
+    },
+    {
+      "method": "coral",
+      "seed": 2026
+    },
+    {
+      "method": "coral",
+      "seed": 3407
+    },
+    {
+      "method": "coral",
+      "seed": 7777
+    },
+    {
+      "method": "mmd",
+      "seed": 42
+    },
+    {
+      "method": "mmd",
+      "seed": 123
+    },
+    {
+      "method": "mmd",
+      "seed": 2026
+    },
+    {
+      "method": "mmd",
+      "seed": 3407
+    },
+    {
+      "method": "mmd",
+      "seed": 7777
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 42
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 123
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 2026
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 3407
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 7777
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 42
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 123
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 2026
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 3407
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 7777
+    },
+    {
+      "method": "relation_blind",
+      "seed": 42
+    },
+    {
+      "method": "relation_blind",
+      "seed": 123
+    },
+    {
+      "method": "relation_blind",
+      "seed": 2026
+    },
+    {
+      "method": "relation_blind",
+      "seed": 3407
+    },
+    {
+      "method": "relation_blind",
+      "seed": 7777
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 42
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 123
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 2026
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 3407
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 7777
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 42
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 123
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 2026
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 3407
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 7777
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 42
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 123
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 2026
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 3407
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 7777
+    }
+  ],
+  "restored_from": [
+    "/kaggle/working/OCRDA_v7_4_4_FROZEN_BATCH_B_RESUME_LATEST.zip"
+  ],
+  "dataset3_used": false,
+  "full_ocrda_frozen": true
+}

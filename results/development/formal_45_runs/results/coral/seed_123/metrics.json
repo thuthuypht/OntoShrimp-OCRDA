@@ -1,0 +1,177 @@
+{
+  "seed": 123,
+  "method": "coral",
+  "method_version": "OCRDA-v7.4.4-frozen-eval-baseline-suite-v1",
+  "source_warm_val": {
+    "accuracy": 0.8947368421052632,
+    "macro_f1": 0.8929381292421205,
+    "balanced_accuracy": 0.8937579821200511,
+    "mcc": 0.8356371905683843,
+    "confusion_matrix": [
+      [
+        24,
+        3,
+        0
+      ],
+      [
+        4,
+        52,
+        2
+      ],
+      [
+        0,
+        5,
+        43
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8888888888888888,
+        "f1": 0.8727272727272727,
+        "support": 27
+      },
+      "Healthy": {
+        "precision": 0.8666666666666667,
+        "recall": 0.896551724137931,
+        "f1": 0.8813559322033898,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.9555555555555556,
+        "recall": 0.8958333333333334,
+        "f1": 0.9247311827956989,
+        "support": 48
+      }
+    }
+  },
+  "source_test": {
+    "accuracy": 0.816793893129771,
+    "macro_f1": 0.7878413242602117,
+    "balanced_accuracy": 0.7876938514869548,
+    "mcc": 0.7137797015865553,
+    "confusion_matrix": [
+      [
+        17,
+        7,
+        4
+      ],
+      [
+        6,
+        49,
+        3
+      ],
+      [
+        3,
+        1,
+        41
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.6538461538461539,
+        "recall": 0.6071428571428571,
+        "f1": 0.6296296296296297,
+        "support": 28
+      },
+      "Healthy": {
+        "precision": 0.8596491228070176,
+        "recall": 0.8448275862068966,
+        "f1": 0.8521739130434782,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.8541666666666666,
+        "recall": 0.9111111111111111,
+        "f1": 0.8817204301075269,
+        "support": 45
+      }
+    }
+  },
+  "target_dev": {
+    "accuracy": 0.6506024096385542,
+    "macro_f1": 0.5360851505711318,
+    "balanced_accuracy": 0.5649917983251317,
+    "mcc": 0.37247982599518414,
+    "confusion_matrix": [
+      [
+        4,
+        2,
+        5
+      ],
+      [
+        1,
+        74,
+        33
+      ],
+      [
+        16,
+        30,
+        84
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.19047619047619047,
+        "recall": 0.36363636363636365,
+        "f1": 0.25,
+        "support": 11
+      },
+      "Healthy": {
+        "precision": 0.6981132075471698,
+        "recall": 0.6851851851851852,
+        "f1": 0.6915887850467289,
+        "support": 108
+      },
+      "WSSV": {
+        "precision": 0.6885245901639344,
+        "recall": 0.6461538461538462,
+        "f1": 0.6666666666666666,
+        "support": 130
+      }
+    }
+  },
+  "checkpoint_policy": "fixed final adaptation epoch; target-dev labels diagnostic only",
+  "safeguards": {
+    "target_adapt_labels_used": false,
+    "target_dev_used_for_checkpoint_selection": false,
+    "dataset3_final_used": false
+  },
+  "hyperparameters": {
+    "method": "coral",
+    "split_dir": "/kaggle/working/OCRDA_v7_4_4_FROZEN_EVAL_RUN/protocol_dev",
+    "sdbd_root": "/kaggle/input/datasets/phmththuthy/ontoshrimp-sdbd/ShrimpDiseaseImageBD/Root/Raw Images/Raw Images",
+    "tsbd_root": "/kaggle/input/datasets/phmththuthy/ontoshrimp-tsbd/TigerShrimpBD/Original",
+    "output_dir": "/kaggle/working/OCRDA_v7_4_4_FROZEN_EVAL_RUN/results/coral",
+    "source_cache_dir": "/kaggle/working/OCRDA_v7_4_4_FROZEN_EVAL_RUN/source_caches/visual",
+    "source_train_file": "source_train_final.csv",
+    "source_val_file": "source_val_final.csv",
+    "source_test_file": "source_test_final.csv",
+    "target_adapt_file": "target_adapt_final.csv",
+    "target_dev_file": "target_dev_exposed.csv",
+    "seeds": [
+      123
+    ],
+    "source_epochs": 8,
+    "adapt_epochs": 22,
+    "max_steps_per_epoch": 72,
+    "batch_size": 8,
+    "image_size": 224,
+    "workers": 2,
+    "emb_dim": 256,
+    "visual_dropout": 0.2,
+    "no_pretrained": false,
+    "backbone_lr": 5e-05,
+    "head_lr": 0.0002,
+    "min_lr": 1e-06,
+    "weight_decay": 0.0001,
+    "grad_clip": 5.0,
+    "label_smoothing": 0.05,
+    "teacher_ema": 0.996,
+    "lambda_target_source_anchor": 0.2,
+    "lambda_da": 0.5,
+    "ccda_conf": 0.6,
+    "ccda_js_max": 0.12,
+    "ccda_pseudo_ce_weight": 0.5
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "dataset3_used": false,
+  "full_model_frozen": true,
+  "complete_methods": {
+    "source_only": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "coral": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "mmd": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "ccda_no_ontology": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "relation_blind": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "shuffled_ontology": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "ocrda_no_reliability": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "ocrda_no_topology": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "full_ocrda": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ]
+  },
+  "frozen_manifest": {
+    "package_id": "OCRDA-v7.4.4-frozen-baselines-ablations-v1",
+    "full_model_version": "OCRDA-v7.4.4",
+    "development_status": "FROZEN",
+    "seeds": [
+      42,
+      123,
+      2026,
+      3407,
+      7777
+    ],
+    "batch_A_methods": [
+      "source_only",
+      "coral",
+      "mmd",
+      "ccda_no_ontology"
+    ],
+    "batch_B_methods": [
+      "full_ocrda",
+      "relation_blind",
+      "shuffled_ontology",
+      "ocrda_no_reliability",
+      "ocrda_no_topology"
+    ],
+    "official_full_command_overrides": {
+      "epochs": 30,
+      "warmup_epochs": 8,
+      "max_adapt_steps_per_epoch": 72,
+      "batch_size": 8,
+      "workers": 2,
+      "target_dev_file": "target_dev_exposed.csv",
+      "report_target_dev": true
+    },
+    "full_trainer_sha256": "e771cc7301de2325df7b660d3c32e9007a0615940006da66925583bd6c60b054",
+    "ablation_trainer_sha256": "2432169e5abd52fec22a0ff122b29e3018ab018ae02c765b392dde1d9bb26690",
+    "ontology_sha256": "51b218118e051f4adb46b6ac92326ec25abae1af7bff00646cd484cdd9b81ccd",
+    "protocol_sha256": {
+      "audit_excluded_target_records.json": "ce739dec4c6f46883ce4f2dd50e7b92e381f52573d5b5f1bb28215b9330caa23",
+      "excluded_reason_summary.csv": "f282d6c7cabecec64dacfa4295acf1c5990ec7f82c5b7cc7b0afd5d54dbbb853",
+      "manifest_final.csv": "529ac7f5078bc1dc7c434173951ebf9e31de6ce451630af213bbdfa665f91876",
+      "source_test_final.csv": "a4f9e398d80bf14fda5815b0bd611ff47feb5eec36562da1dca4d2dc420ef711",
+      "source_train_final.csv": "2e8f80a169b5eadd5ef59e9e9346f96f1f1d9236f6eb3adc9bc9b065d2d5b4a0",
+      "source_val_final.csv": "1c2aa3f3756bb653f723e822a1844617d851585ded7d65f6cb29256478dc7803",
+      "target_adapt_final.csv": "f5ff4cd678c0deffc7c0ffd469689698059b652d51ee7568f5fc772da5a62917",
+      "target_dev_exposed.csv": "26c3ff4fa7c5d9a67e5365cb166ebac9d68fcb334fae6d7b3d9e97ae0b8fb959"
+    },
+    "full_trainer_rule": "Byte-identical copy of the frozen OCRDA-v7.4.4 Full-Only package.",
+    "ablation_trainer_rule": "Derived from frozen Full trainer; only CLI method choices are expanded. Method-specific ablation branches already existed in frozen source.",
+    "dataset3_policy": "Dataset 3 must not be attached or used during these development/formal baseline/ablation runs.",
+    "baseline_trainer_sha256": "452753d2764b34ad5fbbaaa1d82296db6bb7623b5e37b7598b4b9759474ee75f",
+    "package_patch": "baseline-import-fix-1",
+    "package_patch_note": "Packaging-only fix: baseline trainer now imports shared data/model/evaluation utilities from the included frozen v7.4.4 trainer instead of a missing v7.4.2 module. Full OCRDA-v7.4.4 trainer bytes/hyperparameters are unchanged."
+  }
+}

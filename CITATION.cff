@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or reproducibility package, please cite the associated paper and this software release."
+title: "OntoShrimp-OCRDA: Reproducibility materials for OCRDA-v7.4.4 shrimp disease experiments"
+type: software
+authors:
+  - family-names: "Pham"
+    given-names: "Thi Thu Thuy"
+    affiliation: "Nha Trang University"
+version: "1.0.0"
+date-released: "2026-09-18"
+repository-code: "https://github.com/REPLACE_WITH_USERNAME/OntoShrimp-OCRDA"
+keywords:
+  - shrimp disease classification
+  - ontology
+  - domain adaptation
+  - neuro-symbolic AI
+  - reproducibility
+  - OCRDA

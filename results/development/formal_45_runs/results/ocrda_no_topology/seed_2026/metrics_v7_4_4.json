@@ -1,0 +1,400 @@
+{
+  "seed": 2026,
+  "method": "ocrda_no_topology",
+  "selected_epoch": 21,
+  "selected_checkpoint_score": 0.8777673172219276,
+  "source_val": {
+    "accuracy": 0.9022556390977443,
+    "macro_f1": 0.8992621247940397,
+    "balanced_accuracy": 0.9007024265644955,
+    "mcc": 0.8472568494966135,
+    "confusion_matrix": [
+      [
+        24,
+        3,
+        0
+      ],
+      [
+        4,
+        52,
+        2
+      ],
+      [
+        0,
+        4,
+        44
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.8571428571428571,
+        "recall": 0.8888888888888888,
+        "f1": 0.8727272727272727,
+        "support": 27
+      },
+      "Healthy": {
+        "precision": 0.8813559322033898,
+        "recall": 0.896551724137931,
+        "f1": 0.8888888888888888,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.9565217391304348,
+        "recall": 0.9166666666666666,
+        "f1": 0.9361702127659575,
+        "support": 48
+      }
+    }
+  },
+  "source_test": {
+    "accuracy": 0.7786259541984732,
+    "macro_f1": 0.7549471844146584,
+    "balanced_accuracy": 0.7556376573617953,
+    "mcc": 0.6555500140508687,
+    "confusion_matrix": [
+      [
+        17,
+        7,
+        4
+      ],
+      [
+        5,
+        46,
+        7
+      ],
+      [
+        4,
+        2,
+        39
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.6538461538461539,
+        "recall": 0.6071428571428571,
+        "f1": 0.6296296296296297,
+        "support": 28
+      },
+      "Healthy": {
+        "precision": 0.8363636363636363,
+        "recall": 0.7931034482758621,
+        "f1": 0.8141592920353983,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.78,
+        "recall": 0.8666666666666667,
+        "f1": 0.8210526315789474,
+        "support": 45
+      }
+    }
+  },
+  "target_dev": {
+    "accuracy": 0.6907630522088354,
+    "macro_f1": 0.5389942827726263,
+    "balanced_accuracy": 0.5257532590865924,
+    "mcc": 0.42278010492881674,
+    "confusion_matrix": [
+      [
+        2,
+        2,
+        7
+      ],
+      [
+        0,
+        56,
+        52
+      ],
+      [
+        4,
+        12,
+        114
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.3333333333333333,
+        "recall": 0.18181818181818182,
+        "f1": 0.23529411764705882,
+        "support": 11
+      },
+      "Healthy": {
+        "precision": 0.8,
+        "recall": 0.5185185185185185,
+        "f1": 0.6292134831460674,
+        "support": 108
+      },
+      "WSSV": {
+        "precision": 0.6589595375722543,
+        "recall": 0.8769230769230769,
+        "f1": 0.7524752475247525,
+        "support": 130
+      }
+    }
+  },
+  "target_test": null,
+  "selected_checkpoint_pseudo_diagnostics": {
+    "n_target_adapt": 572,
+    "effective_class_count_q": 2.112844944000244,
+    "max_hard_pseudo_fraction": 0.7220279574394226,
+    "collapse_flag": false,
+    "tri_consensus_rate": 0.7937062978744507,
+    "tri_eligible_rate": 0.7727272510528564,
+    "selected_any_rate": 0.19930069148540497,
+    "mean_source_ema_js": 0.05636199191212654,
+    "mean_source_confidence": 0.7853915691375732,
+    "mean_ema_confidence": 0.85392826795578,
+    "mean_proto_confidence": 0.988310694694519,
+    "mean_tri_score": 0.6933706998825073,
+    "mean_selected_tri_score": 0.8161349296569824,
+    "selected_effective_class_count": 2.5474984645843506,
+    "selected_max_class_fraction": 0.5964912176132202,
+    "selected_total_count": 114,
+    "prior_source_weight_scheduled": 0.05455345135451364,
+    "prior_source_weight_used": 0.006872477678597515,
+    "prior_source_js": 0.10358281433582306,
+    "keep_ratio_used": 0.23434126169830302,
+    "prior_confidence_coverage": 0.8164335489273071,
+    "prior_evidence_mix": 1.0,
+    "prior_bbse_fit_l1": 0.046967729926109314,
+    "prior_bbse_condition": 1.8267039060592651,
+    "prior_bbse_trust": 0.6761111797448334,
+    "prior_consensus_available": 1.0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6,
+    "q_mean_BG": 0.06027435511350632,
+    "hard_pseudo_fraction_BG": 0.050699301064014435,
+    "source_prior_BG": 0.21169036626815796,
+    "observed_prior_BG": 0.05759000405669212,
+    "prior_ema_BG": 0.06072069704532623,
+    "target_prior_BG": 0.06175823137164116,
+    "sampling_prior_BG": 0.21436946094036102,
+    "desired_quota_BG": 29,
+    "eligible_count_BG": 16,
+    "candidate_quota_BG": 16,
+    "candidate_quota_rate_BG": 0.027972027972027972,
+    "quota_fill_ratio_BG": 0.5517241379310345,
+    "consensus_threshold_BG": 0.5352991819381714,
+    "selected_rate_BG": 0.0279720276594162,
+    "q_mean_Healthy": 0.2276708334684372,
+    "hard_pseudo_fraction_Healthy": 0.22727271914482117,
+    "source_prior_Healthy": 0.43443918228149414,
+    "observed_prior_Healthy": 0.13088266551494598,
+    "prior_ema_Healthy": 0.14445021748542786,
+    "target_prior_Healthy": 0.14644315838813782,
+    "sampling_prior_Healthy": 0.276115357875824,
+    "desired_quota_Healthy": 37,
+    "eligible_count_Healthy": 30,
+    "candidate_quota_Healthy": 30,
+    "candidate_quota_rate_Healthy": 0.05244755244755245,
+    "quota_fill_ratio_Healthy": 0.8108108108108109,
+    "consensus_threshold_Healthy": 0.552879810333252,
+    "selected_rate_Healthy": 0.05244754999876022,
+    "q_mean_WSSV": 0.7120547890663147,
+    "hard_pseudo_fraction_WSSV": 0.7220279574394226,
+    "source_prior_WSSV": 0.3538704514503479,
+    "observed_prior_WSSV": 0.8115273714065552,
+    "prior_ema_WSSV": 0.7948291301727295,
+    "target_prior_WSSV": 0.7917986512184143,
+    "sampling_prior_WSSV": 0.5095152258872986,
+    "desired_quota_WSSV": 68,
+    "eligible_count_WSSV": 396,
+    "candidate_quota_WSSV": 68,
+    "candidate_quota_rate_WSSV": 0.11888111888111888,
+    "quota_fill_ratio_WSSV": 1.0,
+    "consensus_threshold_WSSV": 0.8639683723449707,
+    "selected_rate_WSSV": 0.11888112127780914,
+    "checkpoint_ensemble_size": 5,
+    "checkpoint_ensemble_epochs": [
+      16,
+      18,
+      19,
+      20,
+      21
+    ],
+    "checkpoint_ensemble_scores": [
+      0.8777673172219276,
+      0.8754489116202314,
+      0.8706865089130307,
+      0.8585516594703843,
+      0.8546719217551862
+    ],
+    "anti_collapse_rollback_count": 0
+  },
+  "checkpoint_selection": {
+    "criterion": "V7.4.4 label-free safe-checkpoint ensemble: hard anti-collapse-safe, signal-mature checkpoints only; average up to top-K checkpoints within an absolute score tolerance of the peak; fallback is never allowed to violate anti-collapse safety",
+    "score_formula": {
+      "source_val_macro_f1_effective_weight": 0.25,
+      "mean_selected_tri_score": 0.3,
+      "signal_adaptation_maturity": 0.18,
+      "selected_distribution_stability": 0.15,
+      "source_retention_trust": 0.1,
+      "global_q_safety_soft": 0.02,
+      "mean_source_ema_js": -0.03,
+      "post_q_l1_drift": -0.02,
+      "source_anchor_drift": -0.03
+    },
+    "soft_global_min_effective_classes_warning_threshold": 1.65,
+    "soft_global_max_hard_fraction_warning_threshold": 0.83,
+    "min_selected_rate": 0.03,
+    "min_tri_consensus_rate": 0.05,
+    "min_selected_effective_classes": 2.0,
+    "max_selected_class_fraction": 0.7,
+    "min_selected_tri_score": 0.5,
+    "max_source_ema_js": 0.15,
+    "checkpoint_min_epoch": 16,
+    "late_tolerance_abs": 0.015,
+    "strict_peak_score_seen": 0.8777673172219276,
+    "fallback_peak_score_seen": 0.8777673172219276,
+    "fallback_used": false,
+    "fallback_policy": null,
+    "strict_gate_reasons_at_selected_epoch": null,
+    "soft_gate_warnings_at_selected_epoch": [],
+    "selected_controller_info": {
+      "v742_selected_tri_score": 0.8161349296569824,
+      "v742_source_ema_js": 0.05636199191212654,
+      "v742_selected_distribution_drift": 0.02241716565165984,
+      "v742_prototype_drift": 4.55776862509083e-05,
+      "v742_source_anchor_drift": 0.03680267184972763,
+      "v742_source_retention_drop": 0.0022889706013705657,
+      "v742_tri_quality": 0.8011244138081871,
+      "v742_js_stability": 0.5818401078383127,
+      "v742_selected_distribution_stability": 1.0,
+      "v742_prototype_stability": 1.0,
+      "v742_source_anchor_stability": 0.8319732815027238,
+      "v742_adaptation_maturity": 0.8391641947280553,
+      "v742_history_ready": true,
+      "v742_plateau_counter": 9,
+      "v742_plateau_age": 5,
+      "v742_plateau_factor": 0.8587340256999999,
+      "v742_plateau_active": true,
+      "v742_source_retention_trust": 1.0,
+      "v742_drift_guard": 1.0,
+      "v742_next_controller_multiplier": 0.8587340256999999
+    },
+    "selection_reference_source_val": {
+      "accuracy": 0.9022556390977443,
+      "macro_f1": 0.8992621247940397,
+      "balanced_accuracy": 0.9007024265644955,
+      "mcc": 0.8472568494966135,
+      "confusion_matrix": [
+        [
+          24,
+          3,
+          0
+        ],
+        [
+          4,
+          52,
+          2
+        ],
+        [
+          0,
+          4,
+          44
+        ]
+      ],
+      "per_class": {
+        "BG": {
+          "precision": 0.8571428571428571,
+          "recall": 0.8888888888888888,
+          "f1": 0.8727272727272727,
+          "support": 27
+        },
+        "Healthy": {
+          "precision": 0.8813559322033898,
+          "recall": 0.896551724137931,
+          "f1": 0.8888888888888888,
+          "support": 58
+        },
+        "WSSV": {
+          "precision": 0.9565217391304348,
+          "recall": 0.9166666666666666,
+          "f1": 0.9361702127659575,
+          "support": 48
+        }
+      }
+    },
+    "checkpoint_ensemble_used": true,
+    "checkpoint_ensemble_epochs": [
+      16,
+      18,
+      19,
+      20,
+      21
+    ],
+    "checkpoint_ensemble_scores": [
+      0.8777673172219276,
+      0.8754489116202314,
+      0.8706865089130307,
+      0.8585516594703843,
+      0.8546719217551862
+    ],
+    "ensemble_top_k": 5,
+    "ensemble_score_tolerance_abs": 0.03,
+    "anti_collapse_rollback_count": 0
+  },
+  "method_version": "OCRDA-v7.4.4",
+  "architecture": {
+    "visual_backbone": "ConvNeXt-Tiny",
+    "classifier_heads": "dual source/target heads",
+    "source_teacher": "frozen source-warm teacher",
+    "target_teacher": "EMA target teacher",
+    "pseudo_label_rule": "source==EMA==ontology prototype tri-consensus with tempered class quota",
+    "pseudo_label_target": "ontology-smoothed soft semantic target; target prevalence prior decoupled from sampling prior",
+    "prototype_geometry": "frozen source prototype + target EMA memory + ontology anchor",
+    "covariance_alignment": false,
+    "relation_aware_ontology_encoder": "R-GCN",
+    "continuous_adaptation_gate": "selected-distribution-aware weighted geometric gate + hard anti-collapse rollback + causal plateau/drift controller",
+    "checkpoint_ensemble": "label-free SWA-style average of anti-collapse-safe checkpoints"
+  },
+  "adaptation_gate": {
+    "policy": "continuous selected-distribution-aware gate; global q(c) collapse is diagnostic only",
+    "eff_low": 1.8,
+    "eff_high": 2.7,
+    "maxfrac_good": 0.5,
+    "maxfrac_bad": 0.75,
+    "triscore_low": 0.5,
+    "triscore_high": 0.8,
+    "js_good": 0.02,
+    "js_bad": 0.15,
+    "selected_rate_low": 0.03,
+    "selected_rate_high": 0.12,
+    "gate_floor": 0.1
+  },
+  "v742_plateau_drift_controller": {
+    "policy": "causal next-epoch multiplier from actual rolling label-free signals",
+    "signals": [
+      "selected tri-score",
+      "source/EMA JS",
+      "selected-distribution TV drift",
+      "prototype cosine drift",
+      "source-anchor cosine drift",
+      "source-retention drop"
+    ],
+    "maturity_threshold": 0.7,
+    "plateau_patience": 5,
+    "plateau_decay": 0.97,
+    "plateau_floor": 0.65,
+    "controller_floor": 0.35,
+    "global_q_collapse_hard_checkpoint_rejection": false
+  },
+  "safeguards": {
+    "target_adapt_labels_used": false,
+    "target_dev_used_for_checkpoint_selection": false,
+    "target_test_used_for_model_selection": false,
+    "target_test_evaluated": false,
+    "class_order": [
+      "BG",
+      "Healthy",
+      "WSSV"
+    ],
+    "anti_collapse_min_effective_classes": 2.0,
+    "anti_collapse_max_class_fraction": 0.75,
+    "anti_collapse_rollback_count": 0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6
+  }
+}

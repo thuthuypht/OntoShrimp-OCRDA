@@ -1,0 +1,30 @@
+# OCRDA-v7.4.4 FROZEN CHECKPOINT REGENERATION — BUILD FINAL 45-MODEL BUNDLE ONLY
+from pathlib import Path
+import json, zipfile, shutil, subprocess, sys
+INPUT=Path('/kaggle/input'); WORK=Path('/kaggle/working')
+PACKAGE_ID='OCRDA-v7.4.4-regenerate-frozen-45-models-v1'
+print('='*100); print('OCRDA-v7.4.4 FROZEN CHECKPOINT REGENERATION — BUILD FINAL 45-MODEL BUNDLE ONLY'); print('='*100)
+hits=[]
+for info in INPUT.rglob('PACKAGE_INFO.json'):
+    try:
+        obj=json.loads(info.read_text(encoding='utf-8'))
+        if obj.get('package_id')==PACKAGE_ID: hits.append(info.parent)
+    except Exception: pass
+if not hits:
+    zips=[z for z in INPUT.rglob('*.zip') if 'regenerate' in z.name.lower() and 'v7_4_4' in z.name.lower()]
+    if not zips: raise FileNotFoundError('Không tìm thấy package OCRDA_v7_4_4_REGENERATE_FROZEN_45_MODELS_Kaggle.')
+    ex=WORK/'OCRDA_v7_4_4_REGEN_PACKAGE'; shutil.rmtree(ex,ignore_errors=True); ex.mkdir(parents=True)
+    with zipfile.ZipFile(sorted(zips,key=lambda p:len(str(p)))[0]) as zz: zz.extractall(ex)
+    for info in ex.rglob('PACKAGE_INFO.json'):
+        try:
+            obj=json.loads(info.read_text(encoding='utf-8'))
+            if obj.get('package_id')==PACKAGE_ID: hits.append(info.parent)
+        except Exception: pass
+if len(hits)!=1:
+    print('Matching package roots:',hits)
+    if not hits: raise RuntimeError('Exact regeneration package not found after extraction.')
+pkg=hits[0]; runner=pkg/'regenerate_frozen_models_runner.py'
+print('PACKAGE:',pkg); print('RUNNER:',runner)
+cmd=[sys.executable,str(runner),'--bundle-only']
+print('COMMAND:',' '.join(cmd))
+subprocess.run(cmd,check=True)

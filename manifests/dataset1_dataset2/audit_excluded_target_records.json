@@ -1,0 +1,41 @@
+{
+  "manifest": "D:\\OntoShrimp_Data\\protocol_output_final\\manifest_final.csv",
+  "target_dataset": "TSBD",
+  "raw_target_records": 1001,
+  "eligible_primary_records": 821,
+  "excluded_records": 180,
+  "stable_key_column": "sample_id",
+  "label_column": "disease_label_common",
+  "duplicate_column": "duplicate_group_id",
+  "previously_exposed_excluded_records": 0,
+  "duplicate_linked_to_exposed_records": 62,
+  "reserve_status_counts": {
+    "NOT_ELIGIBLE": 112,
+    "MANUAL_REVIEW": 68
+  },
+  "ready_reserve_by_class": {
+    "BG": 0,
+    "Healthy": 0,
+    "WSSV": 0
+  },
+  "manual_review_reserve_by_class": {
+    "BG": 0,
+    "Healthy": 40,
+    "WSSV": 28
+  },
+  "all_exclusion_reason_combinations": {
+    "KEEP_FINAL_FALSE": 130,
+    "NONPRIMARY_CLASS": 50
+  },
+  "scientific_interpretation": {
+    "READY": "Potential internal reserve candidate based on manifest/exposure/duplicate metadata. Still visually inspect and verify source provenance before promoting to a locked final test.",
+    "MANUAL_REVIEW": "Potentially independent but previously rejected by keep_final. Must inspect the original rejection reason and image quality; do not automatically restore.",
+    "NOT_ELIGIBLE": "Do not use as a pristine reserve under the current 3-class protocol."
+  },
+  "files": {
+    "excluded_target_records_audit.csv": "e6cdab580772dea4c0a01f3f00e5d0c167abe1b386cdc4fc19c8d8653b8ed564",
+    "excluded_reason_summary.csv": "f282d6c7cabecec64dacfa4295acf1c5990ec7f82c5b7cc7b0afd5d54dbbb853",
+    "candidate_reserve_records.csv": "c2bcb8a456b241a7f428498ed71816cf3d14314b0743d67fde92b991800e3f89",
+    "candidate_reserve_clusters.csv": "2490d65dd75660b35220e21659bccbecd39b5b2d6d4e1ec3e58c11bc0a9786b2"
+  }
+}

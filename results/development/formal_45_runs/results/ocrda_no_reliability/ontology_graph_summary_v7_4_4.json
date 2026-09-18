@@ -1,0 +1,121 @@
+{
+  "version": "OCRDA-v7.4.4",
+  "nodes": 153,
+  "directed_edges_including_reverse": 222,
+  "relation_types_including_reverse": 12,
+  "relations": [
+    "COOCCURSWITH",
+    "COOCCURSWITH__REV",
+    "HASPATHOGEN",
+    "HASPATHOGEN__REV",
+    "HASSEMANTICANCHOR",
+    "HASSEMANTICANCHOR__REV",
+    "IS_A",
+    "IS_A__REV",
+    "SYMPTOMSUPPORTSDISEASE",
+    "SYMPTOMSUPPORTSDISEASE__REV",
+    "TYPICALLOCATION",
+    "TYPICALLOCATION__REV"
+  ],
+  "class_order": [
+    "BG",
+    "Healthy",
+    "WSSV"
+  ],
+  "recognition_anchors": [
+    "BlackGillRecognitionState",
+    "HealthyRecognitionState",
+    "WSSVRecognitionState"
+  ],
+  "anchor_specificity": [
+    0.5,
+    1.0,
+    1.0
+  ],
+  "ontology_similarity": [
+    [
+      1.0,
+      0.0694834515452385,
+      0.26359713077545166
+    ],
+    [
+      0.0694834515452385,
+      1.0,
+      0.0694834515452385
+    ],
+    [
+      0.26359713077545166,
+      0.0694834515452385,
+      1.0
+    ]
+  ],
+  "recognition_topology": [
+    [
+      1.0,
+      0.0694834515452385,
+      0.26359713077545166
+    ],
+    [
+      0.0694834515452385,
+      1.0,
+      0.0694834515452385
+    ],
+    [
+      0.26359713077545166,
+      0.0694834515452385,
+      1.0
+    ]
+  ],
+  "context_topology_diagnostic": [
+    [
+      1.0,
+      0.22313015162944794,
+      0.6065306663513184
+    ],
+    [
+      0.22313015162944794,
+      1.0,
+      0.22313015162944794
+    ],
+    [
+      0.6065306663513184,
+      0.22313015162944794,
+      1.0
+    ]
+  ],
+  "recognition_topology_relations": [
+    "IS_A",
+    "SYMPTOMSUPPORTSDISEASE",
+    "TYPICALLOCATION"
+  ],
+  "recognition_topology_tau": 1.5,
+  "recognition_topology_max_offdiag": 0.35,
+  "architecture": {
+    "visual_backbone": "ConvNeXt-Tiny",
+    "dual_classifier_heads": true,
+    "frozen_source_teacher": true,
+    "ema_target_teacher": true,
+    "ontology_tri_consensus": true,
+    "source_anchored_prototypes": true,
+    "soft_semantic_pseudo_labels": true,
+    "covariance_alignment": false,
+    "relation_aware_ontology_encoder": "R-GCN",
+    "continuous_adaptation_gate": "selected-distribution-aware weighted geometric gate + causal plateau/drift controller"
+  },
+  "v742_controller_core": "rolling selected-distribution/prototype/source-anchor drift + source-retention trust",
+  "v744_changes": {
+    "recognition_only_topology": true,
+    "context_relations_excluded_from_label_smoothing": [
+      "COOCCURSWITH",
+      "HASPATHOGEN"
+    ],
+    "robust_multievidence_target_prior": true,
+    "bbse_uses_source_validation_only": true,
+    "strict_min_checkpoint_epoch": 16,
+    "late_stable_checkpoint_selection": true
+  },
+  "ontology_graph_leakage_safeguard": {
+    "alignmentEligible_false_edges_excluded": true,
+    "dataset_species_learningDomain_provenance_edges_unavailable_to_encoder": true
+  }
+}

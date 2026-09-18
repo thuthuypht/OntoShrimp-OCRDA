@@ -1,0 +1,374 @@
+{
+  "seed": 123,
+  "method": "shuffled_ontology",
+  "selected_epoch": 17,
+  "selected_checkpoint_score": 0.7462748905298303,
+  "source_val": {
+    "accuracy": 0.8796992481203008,
+    "macro_f1": 0.8781977050215812,
+    "balanced_accuracy": 0.881066411238825,
+    "mcc": 0.812776817883728,
+    "confusion_matrix": [
+      [
+        24,
+        3,
+        0
+      ],
+      [
+        5,
+        51,
+        2
+      ],
+      [
+        0,
+        6,
+        42
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.8275862068965517,
+        "recall": 0.8888888888888888,
+        "f1": 0.8571428571428571,
+        "support": 27
+      },
+      "Healthy": {
+        "precision": 0.85,
+        "recall": 0.8793103448275862,
+        "f1": 0.864406779661017,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.9545454545454546,
+        "recall": 0.875,
+        "f1": 0.9130434782608695,
+        "support": 48
+      }
+    }
+  },
+  "source_test": {
+    "accuracy": 0.7862595419847328,
+    "macro_f1": 0.7682606941081517,
+    "balanced_accuracy": 0.7737000547345375,
+    "mcc": 0.670088913295189,
+    "confusion_matrix": [
+      [
+        19,
+        6,
+        3
+      ],
+      [
+        9,
+        45,
+        4
+      ],
+      [
+        3,
+        3,
+        39
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.6129032258064516,
+        "recall": 0.6785714285714286,
+        "f1": 0.6440677966101694,
+        "support": 28
+      },
+      "Healthy": {
+        "precision": 0.8333333333333334,
+        "recall": 0.7758620689655172,
+        "f1": 0.8035714285714286,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.8478260869565217,
+        "recall": 0.8666666666666667,
+        "f1": 0.8571428571428571,
+        "support": 45
+      }
+    }
+  },
+  "target_dev": {
+    "accuracy": 0.5742971887550201,
+    "macro_f1": 0.46676526509797583,
+    "balanced_accuracy": 0.5026936026936027,
+    "mcc": 0.23490893672787455,
+    "confusion_matrix": [
+      [
+        4,
+        3,
+        4
+      ],
+      [
+        4,
+        48,
+        56
+      ],
+      [
+        17,
+        22,
+        91
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.16,
+        "recall": 0.36363636363636365,
+        "f1": 0.2222222222222222,
+        "support": 11
+      },
+      "Healthy": {
+        "precision": 0.6575342465753424,
+        "recall": 0.4444444444444444,
+        "f1": 0.5303867403314917,
+        "support": 108
+      },
+      "WSSV": {
+        "precision": 0.6026490066225165,
+        "recall": 0.7,
+        "f1": 0.6476868327402135,
+        "support": 130
+      }
+    }
+  },
+  "target_test": null,
+  "selected_checkpoint_pseudo_diagnostics": {
+    "n_target_adapt": 572,
+    "effective_class_count_q": 2.4726879596710205,
+    "max_hard_pseudo_fraction": 0.6083915829658508,
+    "collapse_flag": false,
+    "tri_consensus_rate": 0.8146852850914001,
+    "tri_eligible_rate": 0.7779720425605774,
+    "selected_any_rate": 0.1800699234008789,
+    "mean_source_ema_js": 0.04637103155255318,
+    "mean_source_confidence": 0.7565940022468567,
+    "mean_ema_confidence": 0.8425981402397156,
+    "mean_proto_confidence": 0.987974226474762,
+    "mean_tri_score": 0.701652467250824,
+    "mean_selected_tri_score": 0.8569142818450928,
+    "selected_effective_class_count": 2.912139654159546,
+    "selected_max_class_fraction": 0.446601927280426,
+    "selected_total_count": 103,
+    "prior_source_weight_scheduled": 0.07448417022407029,
+    "prior_source_weight_used": 0.02720360256365471,
+    "prior_source_js": 0.050361860543489456,
+    "keep_ratio_used": 0.1793323719542006,
+    "prior_confidence_coverage": 0.8444055914878845,
+    "prior_evidence_mix": 1.0,
+    "prior_bbse_fit_l1": 0.03653532266616821,
+    "prior_bbse_condition": 1.8450555801391602,
+    "prior_bbse_trust": 0.7375207745982879,
+    "prior_consensus_available": 1.0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6,
+    "q_mean_BG": 0.10810161381959915,
+    "hard_pseudo_fraction_BG": 0.09440559148788452,
+    "source_prior_BG": 0.21169036626815796,
+    "observed_prior_BG": 0.1133037582039833,
+    "prior_ema_BG": 0.11768335103988647,
+    "target_prior_BG": 0.12024068087339401,
+    "sampling_prior_BG": 0.2490767240524292,
+    "desired_quota_BG": 26,
+    "eligible_count_BG": 38,
+    "candidate_quota_BG": 26,
+    "candidate_quota_rate_BG": 0.045454545454545456,
+    "quota_fill_ratio_BG": 1.0,
+    "consensus_threshold_BG": 0.8042451739311218,
+    "selected_rate_BG": 0.04545454680919647,
+    "q_mean_Healthy": 0.2903655767440796,
+    "hard_pseudo_fraction_Healthy": 0.29720279574394226,
+    "source_prior_Healthy": 0.43443918228149414,
+    "observed_prior_Healthy": 0.21234415471553802,
+    "prior_ema_Healthy": 0.21438835561275482,
+    "target_prior_Healthy": 0.22037452459335327,
+    "sampling_prior_Healthy": 0.3018202781677246,
+    "desired_quota_Healthy": 31,
+    "eligible_count_Healthy": 80,
+    "candidate_quota_Healthy": 31,
+    "candidate_quota_rate_Healthy": 0.05419580419580419,
+    "quota_fill_ratio_Healthy": 1.0,
+    "consensus_threshold_Healthy": 0.8053216338157654,
+    "selected_rate_Healthy": 0.05419580265879631,
+    "q_mean_WSSV": 0.6015328168869019,
+    "hard_pseudo_fraction_WSSV": 0.6083915829658508,
+    "source_prior_WSSV": 0.3538704514503479,
+    "observed_prior_WSSV": 0.6743521094322205,
+    "prior_ema_WSSV": 0.6679282784461975,
+    "target_prior_WSSV": 0.6593847870826721,
+    "sampling_prior_WSSV": 0.4491029679775238,
+    "desired_quota_WSSV": 46,
+    "eligible_count_WSSV": 327,
+    "candidate_quota_WSSV": 46,
+    "candidate_quota_rate_WSSV": 0.08041958041958042,
+    "quota_fill_ratio_WSSV": 1.0,
+    "consensus_threshold_WSSV": 0.8708676695823669,
+    "selected_rate_WSSV": 0.08041957765817642
+  },
+  "checkpoint_selection": {
+    "criterion": "V7.4.4 label-free safe-checkpoint ensemble: hard anti-collapse-safe, signal-mature checkpoints only; average up to top-K checkpoints within an absolute score tolerance of the peak; fallback is never allowed to violate anti-collapse safety",
+    "score_formula": {
+      "source_val_macro_f1_effective_weight": 0.25,
+      "mean_selected_tri_score": 0.3,
+      "signal_adaptation_maturity": 0.18,
+      "selected_distribution_stability": 0.15,
+      "source_retention_trust": 0.1,
+      "global_q_safety_soft": 0.02,
+      "mean_source_ema_js": -0.03,
+      "post_q_l1_drift": -0.02,
+      "source_anchor_drift": -0.03
+    },
+    "soft_global_min_effective_classes_warning_threshold": 1.65,
+    "soft_global_max_hard_fraction_warning_threshold": 0.83,
+    "min_selected_rate": 0.03,
+    "min_tri_consensus_rate": 0.05,
+    "min_selected_effective_classes": 2.0,
+    "max_selected_class_fraction": 0.7,
+    "min_selected_tri_score": 0.5,
+    "max_source_ema_js": 0.15,
+    "checkpoint_min_epoch": 16,
+    "late_tolerance_abs": 0.015,
+    "strict_peak_score_seen": -1000000000.0,
+    "fallback_peak_score_seen": 0.7462748905298303,
+    "fallback_used": true,
+    "fallback_policy": "latest label-free tri-consensus checkpoint within tolerance of the peak score, never earlier than checkpoint_min_epoch, when the strict selected-distribution gate has no eligible epoch",
+    "strict_gate_reasons_at_selected_epoch": [
+      "adaptation_not_signal_mature"
+    ],
+    "soft_gate_warnings_at_selected_epoch": [],
+    "selected_controller_info": {
+      "v742_selected_tri_score": 0.8569142818450928,
+      "v742_source_ema_js": 0.04637103155255318,
+      "v742_selected_distribution_drift": 0.005115375303364977,
+      "v742_prototype_drift": 4.93923835165333e-05,
+      "v742_source_anchor_drift": 0.5710852146148682,
+      "v742_source_retention_drop": 0.015090704121323406,
+      "v742_tri_quality": 1.0,
+      "v742_js_stability": 0.7150529126326243,
+      "v742_selected_distribution_stability": 1.0,
+      "v742_prototype_stability": 1.0,
+      "v742_source_anchor_stability": 0.0,
+      "v742_adaptation_maturity": 0.23886401446866992,
+      "v742_history_ready": true,
+      "v742_plateau_counter": 0,
+      "v742_plateau_age": 0,
+      "v742_plateau_factor": 1.0,
+      "v742_plateau_active": false,
+      "v742_source_retention_trust": 0.7757621306372576,
+      "v742_drift_guard": 0.45,
+      "v742_next_controller_multiplier": 0.35
+    },
+    "selection_reference_source_val": {
+      "accuracy": 0.8796992481203008,
+      "macro_f1": 0.8781977050215812,
+      "balanced_accuracy": 0.881066411238825,
+      "mcc": 0.812776817883728,
+      "confusion_matrix": [
+        [
+          24,
+          3,
+          0
+        ],
+        [
+          5,
+          51,
+          2
+        ],
+        [
+          0,
+          6,
+          42
+        ]
+      ],
+      "per_class": {
+        "BG": {
+          "precision": 0.8275862068965517,
+          "recall": 0.8888888888888888,
+          "f1": 0.8571428571428571,
+          "support": 27
+        },
+        "Healthy": {
+          "precision": 0.85,
+          "recall": 0.8793103448275862,
+          "f1": 0.864406779661017,
+          "support": 58
+        },
+        "WSSV": {
+          "precision": 0.9545454545454546,
+          "recall": 0.875,
+          "f1": 0.9130434782608695,
+          "support": 48
+        }
+      }
+    },
+    "checkpoint_ensemble_used": false,
+    "checkpoint_ensemble_epochs": [],
+    "checkpoint_ensemble_scores": [],
+    "ensemble_top_k": 5,
+    "ensemble_score_tolerance_abs": 0.03,
+    "anti_collapse_rollback_count": 0
+  },
+  "method_version": "OCRDA-v7.4.4",
+  "architecture": {
+    "visual_backbone": "ConvNeXt-Tiny",
+    "classifier_heads": "dual source/target heads",
+    "source_teacher": "frozen source-warm teacher",
+    "target_teacher": "EMA target teacher",
+    "pseudo_label_rule": "source==EMA==ontology prototype tri-consensus with tempered class quota",
+    "pseudo_label_target": "ontology-smoothed soft semantic target; target prevalence prior decoupled from sampling prior",
+    "prototype_geometry": "frozen source prototype + target EMA memory + ontology anchor",
+    "covariance_alignment": false,
+    "relation_aware_ontology_encoder": "R-GCN",
+    "continuous_adaptation_gate": "selected-distribution-aware weighted geometric gate + hard anti-collapse rollback + causal plateau/drift controller",
+    "checkpoint_ensemble": "label-free SWA-style average of anti-collapse-safe checkpoints"
+  },
+  "adaptation_gate": {
+    "policy": "continuous selected-distribution-aware gate; global q(c) collapse is diagnostic only",
+    "eff_low": 1.8,
+    "eff_high": 2.7,
+    "maxfrac_good": 0.5,
+    "maxfrac_bad": 0.75,
+    "triscore_low": 0.5,
+    "triscore_high": 0.8,
+    "js_good": 0.02,
+    "js_bad": 0.15,
+    "selected_rate_low": 0.03,
+    "selected_rate_high": 0.12,
+    "gate_floor": 0.1
+  },
+  "v742_plateau_drift_controller": {
+    "policy": "causal next-epoch multiplier from actual rolling label-free signals",
+    "signals": [
+      "selected tri-score",
+      "source/EMA JS",
+      "selected-distribution TV drift",
+      "prototype cosine drift",
+      "source-anchor cosine drift",
+      "source-retention drop"
+    ],
+    "maturity_threshold": 0.7,
+    "plateau_patience": 5,
+    "plateau_decay": 0.97,
+    "plateau_floor": 0.65,
+    "controller_floor": 0.35,
+    "global_q_collapse_hard_checkpoint_rejection": false
+  },
+  "safeguards": {
+    "target_adapt_labels_used": false,
+    "target_dev_used_for_checkpoint_selection": false,
+    "target_test_used_for_model_selection": false,
+    "target_test_evaluated": false,
+    "class_order": [
+      "BG",
+      "Healthy",
+      "WSSV"
+    ],
+    "anti_collapse_min_effective_classes": 2.0,
+    "anti_collapse_max_class_fraction": 0.75,
+    "anti_collapse_rollback_count": 0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6
+  }
+}

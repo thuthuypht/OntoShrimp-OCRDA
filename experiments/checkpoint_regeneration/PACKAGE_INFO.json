@@ -1,0 +1,10 @@
+{
+  "package_id": "OCRDA-v7.4.4-regenerate-frozen-45-models-v1",
+  "version": "1.0",
+  "purpose": "Recover lost frozen model weights only",
+  "one_seed_per_execution": true,
+  "models_per_seed": 9,
+  "total_models": 45,
+  "dataset3_used": false,
+  "frozen_hyperparameters_changed": false
+}

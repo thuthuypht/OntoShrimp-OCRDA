@@ -1,0 +1,24 @@
+{
+  "package": "OCRDA_v7_4_4_FROZEN_DATASET3_EXTERNAL_EVAL_Kaggle",
+  "protocol_id": "OCRDA-v7.4.4-frozen-dataset3-external-eval-v1",
+  "dataset3_manifest_sha256": "d42febf3efe1af7aa9359f351708e57ea1d4e604272d6269d9f540f6bfb75662",
+  "methods": [
+    "source_only",
+    "coral",
+    "mmd",
+    "ccda_no_ontology",
+    "relation_blind",
+    "shuffled_ontology",
+    "ocrda_no_reliability",
+    "ocrda_no_topology",
+    "full_ocrda"
+  ],
+  "seeds": [
+    42,
+    123,
+    2026,
+    3407,
+    7777
+  ],
+  "inference_only": true
+}

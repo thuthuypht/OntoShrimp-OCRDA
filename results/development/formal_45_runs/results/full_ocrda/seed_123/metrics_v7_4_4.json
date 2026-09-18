@@ -1,0 +1,388 @@
+{
+  "seed": 123,
+  "method": "full_ocrda",
+  "selected_epoch": 17,
+  "selected_checkpoint_score": 0.9056410443291668,
+  "source_val": {
+    "accuracy": 0.8947368421052632,
+    "macro_f1": 0.8937448366931418,
+    "balanced_accuracy": 0.9003565346956152,
+    "mcc": 0.8366920076157097,
+    "confusion_matrix": [
+      [
+        25,
+        2,
+        0
+      ],
+      [
+        5,
+        51,
+        2
+      ],
+      [
+        0,
+        5,
+        43
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.8333333333333334,
+        "recall": 0.9259259259259259,
+        "f1": 0.8771929824561403,
+        "support": 27
+      },
+      "Healthy": {
+        "precision": 0.8793103448275862,
+        "recall": 0.8793103448275862,
+        "f1": 0.8793103448275862,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.9555555555555556,
+        "recall": 0.8958333333333334,
+        "f1": 0.9247311827956989,
+        "support": 48
+      }
+    }
+  },
+  "source_test": {
+    "accuracy": 0.8320610687022901,
+    "macro_f1": 0.8241971582077229,
+    "balanced_accuracy": 0.8406312716657544,
+    "mcc": 0.7477778237601423,
+    "confusion_matrix": [
+      [
+        24,
+        2,
+        2
+      ],
+      [
+        8,
+        45,
+        5
+      ],
+      [
+        3,
+        2,
+        40
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.6857142857142857,
+        "recall": 0.8571428571428571,
+        "f1": 0.7619047619047619,
+        "support": 28
+      },
+      "Healthy": {
+        "precision": 0.9183673469387755,
+        "recall": 0.7758620689655172,
+        "f1": 0.8411214953271028,
+        "support": 58
+      },
+      "WSSV": {
+        "precision": 0.851063829787234,
+        "recall": 0.8888888888888888,
+        "f1": 0.8695652173913043,
+        "support": 45
+      }
+    }
+  },
+  "target_dev": {
+    "accuracy": 0.5381526104417671,
+    "macro_f1": 0.45717313741634474,
+    "balanced_accuracy": 0.5581326081326081,
+    "mcc": 0.20595440473312515,
+    "confusion_matrix": [
+      [
+        7,
+        3,
+        1
+      ],
+      [
+        11,
+        39,
+        58
+      ],
+      [
+        21,
+        21,
+        88
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.1794871794871795,
+        "recall": 0.6363636363636364,
+        "f1": 0.28,
+        "support": 11
+      },
+      "Healthy": {
+        "precision": 0.6190476190476191,
+        "recall": 0.3611111111111111,
+        "f1": 0.45614035087719296,
+        "support": 108
+      },
+      "WSSV": {
+        "precision": 0.5986394557823129,
+        "recall": 0.676923076923077,
+        "f1": 0.6353790613718412,
+        "support": 130
+      }
+    }
+  },
+  "target_test": null,
+  "selected_checkpoint_pseudo_diagnostics": {
+    "n_target_adapt": 572,
+    "effective_class_count_q": 2.630544424057007,
+    "max_hard_pseudo_fraction": 0.5856643319129944,
+    "collapse_flag": false,
+    "tri_consensus_rate": 0.8251748085021973,
+    "tri_eligible_rate": 0.7902097702026367,
+    "selected_any_rate": 0.16083915531635284,
+    "mean_source_ema_js": 0.04549649357795715,
+    "mean_source_confidence": 0.7565940022468567,
+    "mean_ema_confidence": 0.8384189605712891,
+    "mean_proto_confidence": 0.9886745810508728,
+    "mean_tri_score": 0.7062353491783142,
+    "mean_selected_tri_score": 0.8627397418022156,
+    "selected_effective_class_count": 2.9168758392333984,
+    "selected_max_class_fraction": 0.44565218687057495,
+    "selected_total_count": 92,
+    "prior_source_weight_scheduled": 0.08148097094194787,
+    "prior_source_weight_used": 0.02916880152535446,
+    "prior_source_js": 0.051363490521907806,
+    "keep_ratio_used": 0.16249999999999998,
+    "prior_confidence_coverage": 0.8479020595550537,
+    "prior_evidence_mix": 1.0,
+    "prior_bbse_fit_l1": 0.03653532266616821,
+    "prior_bbse_condition": 1.8450555801391602,
+    "prior_bbse_trust": 0.7375207745982879,
+    "prior_consensus_available": 1.0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6,
+    "q_mean_BG": 0.17636172473430634,
+    "hard_pseudo_fraction_BG": 0.16958041489124298,
+    "source_prior_BG": 0.21169036626815796,
+    "observed_prior_BG": 0.1412665843963623,
+    "prior_ema_BG": 0.14350637793540955,
+    "target_prior_BG": 0.1454952359199524,
+    "sampling_prior_BG": 0.26307737827301025,
+    "desired_quota_BG": 24,
+    "eligible_count_BG": 51,
+    "candidate_quota_BG": 24,
+    "candidate_quota_rate_BG": 0.04195804195804196,
+    "quota_fill_ratio_BG": 1.0,
+    "consensus_threshold_BG": 0.8505619168281555,
+    "selected_rate_BG": 0.0419580414891243,
+    "q_mean_Healthy": 0.2450150102376938,
+    "hard_pseudo_fraction_Healthy": 0.24475523829460144,
+    "source_prior_Healthy": 0.43443918228149414,
+    "observed_prior_Healthy": 0.1964576691389084,
+    "prior_ema_Healthy": 0.1922062188386917,
+    "target_prior_Healthy": 0.19927185773849487,
+    "sampling_prior_Healthy": 0.29085004329681396,
+    "desired_quota_Healthy": 27,
+    "eligible_count_Healthy": 77,
+    "candidate_quota_Healthy": 27,
+    "candidate_quota_rate_Healthy": 0.0472027972027972,
+    "quota_fill_ratio_Healthy": 1.0,
+    "consensus_threshold_Healthy": 0.8215992450714111,
+    "selected_rate_Healthy": 0.04720279574394226,
+    "q_mean_WSSV": 0.5786232948303223,
+    "hard_pseudo_fraction_WSSV": 0.5856643319129944,
+    "source_prior_WSSV": 0.3538704514503479,
+    "observed_prior_WSSV": 0.6622756719589233,
+    "prior_ema_WSSV": 0.6642874479293823,
+    "target_prior_WSSV": 0.6552329659461975,
+    "sampling_prior_WSSV": 0.4460725784301758,
+    "desired_quota_WSSV": 41,
+    "eligible_count_WSSV": 324,
+    "candidate_quota_WSSV": 41,
+    "candidate_quota_rate_WSSV": 0.07167832167832168,
+    "quota_fill_ratio_WSSV": 1.0,
+    "consensus_threshold_WSSV": 0.873835027217865,
+    "selected_rate_WSSV": 0.07167831808328629,
+    "checkpoint_ensemble_size": 2,
+    "checkpoint_ensemble_epochs": [
+      16,
+      17
+    ],
+    "checkpoint_ensemble_scores": [
+      0.9056410443291668,
+      0.8934227082394985
+    ],
+    "anti_collapse_rollback_count": 0
+  },
+  "checkpoint_selection": {
+    "criterion": "V7.4.4 label-free safe-checkpoint ensemble: hard anti-collapse-safe, signal-mature checkpoints only; average up to top-K checkpoints within an absolute score tolerance of the peak; fallback is never allowed to violate anti-collapse safety",
+    "score_formula": {
+      "source_val_macro_f1_effective_weight": 0.25,
+      "mean_selected_tri_score": 0.3,
+      "signal_adaptation_maturity": 0.18,
+      "selected_distribution_stability": 0.15,
+      "source_retention_trust": 0.1,
+      "global_q_safety_soft": 0.02,
+      "mean_source_ema_js": -0.03,
+      "post_q_l1_drift": -0.02,
+      "source_anchor_drift": -0.03
+    },
+    "soft_global_min_effective_classes_warning_threshold": 1.65,
+    "soft_global_max_hard_fraction_warning_threshold": 0.83,
+    "min_selected_rate": 0.03,
+    "min_tri_consensus_rate": 0.05,
+    "min_selected_effective_classes": 2.0,
+    "max_selected_class_fraction": 0.7,
+    "min_selected_tri_score": 0.5,
+    "max_source_ema_js": 0.15,
+    "checkpoint_min_epoch": 16,
+    "late_tolerance_abs": 0.015,
+    "strict_peak_score_seen": 0.9056410443291668,
+    "fallback_peak_score_seen": 0.9056410443291668,
+    "fallback_used": false,
+    "fallback_policy": null,
+    "strict_gate_reasons_at_selected_epoch": null,
+    "soft_gate_warnings_at_selected_epoch": [],
+    "selected_controller_info": {
+      "v742_selected_tri_score": 0.8627397418022156,
+      "v742_source_ema_js": 0.04549649357795715,
+      "v742_selected_distribution_drift": 0.004321633514680984,
+      "v742_prototype_drift": 4.074971002410166e-05,
+      "v742_source_anchor_drift": 0.06372702121734619,
+      "v742_source_retention_drop": 0.0,
+      "v742_tri_quality": 1.0,
+      "v742_js_stability": 0.7267134189605713,
+      "v742_selected_distribution_stability": 1.0,
+      "v742_prototype_stability": 1.0,
+      "v742_source_anchor_stability": 0.562729787826538,
+      "v742_adaptation_maturity": 0.8744791571017284,
+      "v742_history_ready": true,
+      "v742_plateau_counter": 6,
+      "v742_plateau_age": 2,
+      "v742_plateau_factor": 0.9409,
+      "v742_plateau_active": true,
+      "v742_source_retention_trust": 1.0,
+      "v742_drift_guard": 1.0,
+      "v742_next_controller_multiplier": 0.9409
+    },
+    "selection_reference_source_val": {
+      "accuracy": 0.9022556390977443,
+      "macro_f1": 0.9002881600135605,
+      "balanced_accuracy": 0.9061036611323968,
+      "mcc": 0.8485757065563069,
+      "confusion_matrix": [
+        [
+          25,
+          2,
+          0
+        ],
+        [
+          5,
+          52,
+          1
+        ],
+        [
+          0,
+          5,
+          43
+        ]
+      ],
+      "per_class": {
+        "BG": {
+          "precision": 0.8333333333333334,
+          "recall": 0.9259259259259259,
+          "f1": 0.8771929824561403,
+          "support": 27
+        },
+        "Healthy": {
+          "precision": 0.8813559322033898,
+          "recall": 0.896551724137931,
+          "f1": 0.8888888888888888,
+          "support": 58
+        },
+        "WSSV": {
+          "precision": 0.9772727272727273,
+          "recall": 0.8958333333333334,
+          "f1": 0.9347826086956522,
+          "support": 48
+        }
+      }
+    },
+    "checkpoint_ensemble_used": true,
+    "checkpoint_ensemble_epochs": [
+      16,
+      17
+    ],
+    "checkpoint_ensemble_scores": [
+      0.9056410443291668,
+      0.8934227082394985
+    ],
+    "ensemble_top_k": 5,
+    "ensemble_score_tolerance_abs": 0.03,
+    "anti_collapse_rollback_count": 0
+  },
+  "method_version": "OCRDA-v7.4.4",
+  "architecture": {
+    "visual_backbone": "ConvNeXt-Tiny",
+    "classifier_heads": "dual source/target heads",
+    "source_teacher": "frozen source-warm teacher",
+    "target_teacher": "EMA target teacher",
+    "pseudo_label_rule": "source==EMA==ontology prototype tri-consensus with tempered class quota",
+    "pseudo_label_target": "ontology-smoothed soft semantic target; target prevalence prior decoupled from sampling prior",
+    "prototype_geometry": "frozen source prototype + target EMA memory + ontology anchor",
+    "covariance_alignment": false,
+    "relation_aware_ontology_encoder": "R-GCN",
+    "continuous_adaptation_gate": "selected-distribution-aware weighted geometric gate + hard anti-collapse rollback + causal plateau/drift controller",
+    "checkpoint_ensemble": "label-free SWA-style average of anti-collapse-safe checkpoints"
+  },
+  "adaptation_gate": {
+    "policy": "continuous selected-distribution-aware gate; global q(c) collapse is diagnostic only",
+    "eff_low": 1.8,
+    "eff_high": 2.7,
+    "maxfrac_good": 0.5,
+    "maxfrac_bad": 0.75,
+    "triscore_low": 0.5,
+    "triscore_high": 0.8,
+    "js_good": 0.02,
+    "js_bad": 0.15,
+    "selected_rate_low": 0.03,
+    "selected_rate_high": 0.12,
+    "gate_floor": 0.1
+  },
+  "v742_plateau_drift_controller": {
+    "policy": "causal next-epoch multiplier from actual rolling label-free signals",
+    "signals": [
+      "selected tri-score",
+      "source/EMA JS",
+      "selected-distribution TV drift",
+      "prototype cosine drift",
+      "source-anchor cosine drift",
+      "source-retention drop"
+    ],
+    "maturity_threshold": 0.7,
+    "plateau_patience": 5,
+    "plateau_decay": 0.97,
+    "plateau_floor": 0.65,
+    "controller_floor": 0.35,
+    "global_q_collapse_hard_checkpoint_rejection": false
+  },
+  "safeguards": {
+    "target_adapt_labels_used": false,
+    "target_dev_used_for_checkpoint_selection": false,
+    "target_test_used_for_model_selection": false,
+    "target_test_evaluated": false,
+    "class_order": [
+      "BG",
+      "Healthy",
+      "WSSV"
+    ],
+    "anti_collapse_min_effective_classes": 2.0,
+    "anti_collapse_max_class_fraction": 0.75,
+    "anti_collapse_rollback_count": 0,
+    "quota_temper_gamma": 0.5,
+    "quota_min_class_fraction": 0.1,
+    "quota_min_class_count": 6
+  }
+}

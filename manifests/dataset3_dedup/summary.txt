@@ -1,0 +1,23 @@
+CROSS-DATASET DEDUP SUMMARY
+
+Dataset1 images: 1895
+Dataset2 images: 4575
+Dataset3 checked: 150
+
+Exact matches: 0
+High-confidence near duplicates: 0
+Medium manual-review pairs: 0
+Dataset3 images excluded: 0
+Dataset3 images retained: 150
+
+Per-class Dataset3:
+  BG: total=50, exclude=0, keep=50
+  Healthy: total=50, exclude=0, keep=50
+  WSSV: total=50, exclude=0, keep=50
+
+Recommended interpretation:
+- EXACT/HIGH: remove from Dataset3 final external test.
+- MEDIUM: visually inspect before deciding.
+- LOW: normally keep unless manual inspection shows overlap.
+- If a Dataset3 image overlaps either Dataset1 or Dataset2, it is NOT independent external test data.
+- After exclusions, re-balance the final test if class counts become unequal.

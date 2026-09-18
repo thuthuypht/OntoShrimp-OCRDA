@@ -1,0 +1,13 @@
+{
+  "package_id": "OCRDA-v7.4.4-frozen-baselines-ablations-v1",
+  "version": "1.1",
+  "purpose": "Formal frozen baseline + ablation evaluation after OCRDA-v7.4.4 development lock",
+  "batches": {
+    "A": "visual baselines",
+    "B": "frozen full + ontology/OCRDA ablations"
+  },
+  "one_seed_per_execution": true,
+  "dataset3_used": false,
+  "patch": "baseline-import-fix-1",
+  "patch_scope": "baseline packaging/import only; Full OCRDA-v7.4.4 unchanged"
+}

@@ -1,0 +1,36 @@
+# OCRDA-v7.4.4 FROZEN FORMAL EVALUATION — Batch A
+from pathlib import Path
+import json, zipfile, shutil, runpy, os, sys
+INPUT=Path('/kaggle/input'); WORK=Path('/kaggle/working')
+PACKAGE_ID='OCRDA-v7.4.4-frozen-baselines-ablations-v1'
+BATCH='A'
+print('='*100); print('OCRDA-v7.4.4 FROZEN EVALUATION — BATCH',BATCH); print('='*100)
+# Find exact package by PACKAGE_INFO.json, never by shortest runner path.
+hits=[]
+for info in INPUT.rglob('PACKAGE_INFO.json'):
+    try:
+        obj=json.loads(info.read_text(encoding='utf-8'))
+        if obj.get('package_id')==PACKAGE_ID: hits.append(info.parent)
+    except Exception: pass
+if not hits:
+    zips=[]
+    for z in INPUT.rglob('*.zip'):
+        if 'frozen' in z.name.lower() and 'v7_4_4' in z.name.lower(): zips.append(z)
+    if not zips: raise FileNotFoundError('Không tìm thấy package OCRDA_v7_4_4_FROZEN_BASELINES_ABLATIONS_Kaggle.')
+    ex=WORK/'OCRDA_v7_4_4_FROZEN_PACKAGE'; shutil.rmtree(ex,ignore_errors=True); ex.mkdir(parents=True)
+    with zipfile.ZipFile(sorted(zips,key=lambda p:len(str(p)))[0]) as zz: zz.extractall(ex)
+    for info in ex.rglob('PACKAGE_INFO.json'):
+        try:
+            obj=json.loads(info.read_text(encoding='utf-8'))
+            if obj.get('package_id')==PACKAGE_ID: hits.append(info.parent)
+        except Exception: pass
+if len(hits)!=1:
+    print('Matching package roots:',hits)
+    if not hits: raise RuntimeError('Không tìm thấy exact frozen package after extraction.')
+pkg=hits[0]; runner=pkg/'kaggle_frozen_suite_runner.py'
+print('PACKAGE:',pkg); print('RUNNER:',runner)
+# Explicit version check before GPU work.
+info=json.loads((pkg/'PACKAGE_INFO.json').read_text(encoding='utf-8')); assert info['package_id']==PACKAGE_ID
+os.chdir(pkg); sys.path.insert(0,str(pkg)); sys.argv=[str(runner),'--batch',BATCH,'--max-new-seeds','1']
+runpy.run_path(str(runner),run_name='__main__')
+print('\nAfter this seed-bundle: download REPORTS_LATEST.zip + RESUME_LATEST.zip + MODEL ZIPs before rerun.')

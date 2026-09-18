@@ -1,0 +1,58 @@
+{
+  "protocol_id": "OCRDA-v7.4.4-frozen-dataset3-external-eval-v1",
+  "method": "full_ocrda",
+  "seed": 123,
+  "checkpoint_sha256": "bb7510fb803c68b5152e6dcfa6d24cc92e4d4122037baa2f461b0bf48dcb8a4b",
+  "checkpoint_source": "/kaggle/input/datasets/phmththuthy/ocrda-v744-frozen-45-models/models/full_ocrda/seed_123/compact_model_fp16.pt",
+  "dataset3_manifest_sha256": "d42febf3efe1af7aa9359f351708e57ea1d4e604272d6269d9f540f6bfb75662",
+  "dataset3_external": {
+    "accuracy": 0.42,
+    "macro_f1": 0.3763162353063831,
+    "balanced_accuracy": 0.4200000000000001,
+    "mcc": 0.14980511419160675,
+    "confusion_matrix": [
+      [
+        37,
+        12,
+        1
+      ],
+      [
+        29,
+        20,
+        1
+      ],
+      [
+        28,
+        16,
+        6
+      ]
+    ],
+    "per_class": {
+      "BG": {
+        "precision": 0.39361702127659576,
+        "recall": 0.74,
+        "f1": 0.5138888888888888,
+        "support": 50
+      },
+      "Healthy": {
+        "precision": 0.4166666666666667,
+        "recall": 0.4,
+        "f1": 0.40816326530612246,
+        "support": 50
+      },
+      "WSSV": {
+        "precision": 0.75,
+        "recall": 0.12,
+        "f1": 0.20689655172413793,
+        "support": 50
+      }
+    }
+  },
+  "safeguards": {
+    "training_performed": false,
+    "adaptation_performed": false,
+    "checkpoint_selection_performed": false,
+    "tuning_performed": false,
+    "test_time_adaptation": false
+  }
+}

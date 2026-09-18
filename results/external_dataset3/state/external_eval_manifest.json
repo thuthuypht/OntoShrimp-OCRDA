@@ -1,0 +1,192 @@
+{
+  "protocol_id": "OCRDA-v7.4.4-frozen-dataset3-external-eval-v1",
+  "updated_utc": "2026-09-18T11:13:02.990120+00:00",
+  "current_seed": null,
+  "current_method": null,
+  "completed": [
+    {
+      "method": "source_only",
+      "seed": 42
+    },
+    {
+      "method": "coral",
+      "seed": 42
+    },
+    {
+      "method": "mmd",
+      "seed": 42
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 42
+    },
+    {
+      "method": "relation_blind",
+      "seed": 42
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 42
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 42
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 42
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 42
+    },
+    {
+      "method": "source_only",
+      "seed": 123
+    },
+    {
+      "method": "coral",
+      "seed": 123
+    },
+    {
+      "method": "mmd",
+      "seed": 123
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 123
+    },
+    {
+      "method": "relation_blind",
+      "seed": 123
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 123
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 123
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 123
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 123
+    },
+    {
+      "method": "source_only",
+      "seed": 2026
+    },
+    {
+      "method": "coral",
+      "seed": 2026
+    },
+    {
+      "method": "mmd",
+      "seed": 2026
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 2026
+    },
+    {
+      "method": "relation_blind",
+      "seed": 2026
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 2026
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 2026
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 2026
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 2026
+    },
+    {
+      "method": "source_only",
+      "seed": 3407
+    },
+    {
+      "method": "coral",
+      "seed": 3407
+    },
+    {
+      "method": "mmd",
+      "seed": 3407
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 3407
+    },
+    {
+      "method": "relation_blind",
+      "seed": 3407
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 3407
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 3407
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 3407
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 3407
+    },
+    {
+      "method": "source_only",
+      "seed": 7777
+    },
+    {
+      "method": "coral",
+      "seed": 7777
+    },
+    {
+      "method": "mmd",
+      "seed": 7777
+    },
+    {
+      "method": "ccda_no_ontology",
+      "seed": 7777
+    },
+    {
+      "method": "relation_blind",
+      "seed": 7777
+    },
+    {
+      "method": "shuffled_ontology",
+      "seed": 7777
+    },
+    {
+      "method": "ocrda_no_reliability",
+      "seed": 7777
+    },
+    {
+      "method": "ocrda_no_topology",
+      "seed": 7777
+    },
+    {
+      "method": "full_ocrda",
+      "seed": 7777
+    }
+  ],
+  "dataset3_opened": true,
+  "development_locked": true,
+  "training_performed": false,
+  "tuning_performed": false
+}
