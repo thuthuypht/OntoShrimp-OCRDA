@@ -1,0 +1,12 @@
+quantity,value,status,notes
+n_cases,30,unverified_historical,Reported in manuscript drafts
+yolo_only_point_macro_f1,0.580,unverified_historical,Reported in manuscript drafts
+yolo_only_accuracy,0.567,unverified_historical,17/30 reported
+yolo_ontology_point_macro_f1,0.570,unverified_historical,Reported in manuscript drafts
+yolo_ontology_accuracy,0.600,unverified_historical,18/30 reported
+bootstrap_resamples,2000,unverified_historical,Reported in manuscript drafts
+bootstrap_mean_macro_f1_yolo_ontology,0.556,unverified_historical,Needs genuine case-level predictions
+bootstrap_mean_macro_f1_yolo_only,0.564,unverified_historical,Needs genuine case-level predictions
+bootstrap_mean_difference_ontology_minus_yolo,-0.008,unverified_historical,Needs genuine case-level predictions
+reported_p_value,0.53,unverified_historical,Original p-value definition not preserved
+reported_95pct_interval,spans_zero,unverified_historical,Exact endpoints not preserved

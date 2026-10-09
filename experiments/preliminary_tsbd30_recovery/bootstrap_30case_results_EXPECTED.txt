@@ -1,0 +1,20 @@
+PRELIMINARY TSBD 30-CASE BOOTSTRAP — HISTORICAL MANUSCRIPT VALUES
+=====================================================================
+
+STATUS: UNVERIFIED. THIS FILE IS NOT ORIGINAL SOURCE OUTPUT.
+
+Historical values:
+- N = 30
+- YOLO-only point Macro-F1 = 0.580
+- YOLO-only accuracy = 0.567 (17/30)
+- YOLO+Ontology point Macro-F1 = 0.570
+- YOLO+Ontology accuracy = 0.600 (18/30)
+- Bootstrap resamples = 2,000
+- Bootstrap mean Macro-F1, YOLO+Ontology = 0.556
+- Bootstrap mean Macro-F1, YOLO-only = 0.564
+- Mean paired difference (Ontology - YOLO-only) = -0.008
+- Reported 95% interval = spans zero
+- Reported p-value = 0.53
+
+Do NOT cite this file as verification. Verification requires original source output or genuine case-level predictions for the same 30 images.
+The exact algorithm used for historical p = 0.53 was not preserved.
