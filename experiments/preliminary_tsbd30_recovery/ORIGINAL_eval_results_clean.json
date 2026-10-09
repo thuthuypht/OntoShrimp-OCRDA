@@ -1,0 +1,582 @@
+{
+  "total_cases": 30,
+  "metrics": {
+    "YOLO-only": {
+      "accuracy": 0.567,
+      "macro_P": 0.605,
+      "macro_R": 0.567,
+      "macro_F1": 0.58,
+      "per_class": {
+        "WSSV": {
+          "P": 0.556,
+          "R": 0.5,
+          "F1": 0.526,
+          "TP": 5,
+          "FP": 4,
+          "FN": 5
+        },
+        "BlackGillDisease": {
+          "P": 0.875,
+          "R": 0.7,
+          "F1": 0.778,
+          "TP": 7,
+          "FP": 1,
+          "FN": 3
+        },
+        "Healthy": {
+          "P": 0.385,
+          "R": 0.5,
+          "F1": 0.435,
+          "TP": 5,
+          "FP": 8,
+          "FN": 5
+        }
+      }
+    },
+    "YOLO+Heuristic": {
+      "accuracy": 0.567,
+      "macro_P": 0.605,
+      "macro_R": 0.567,
+      "macro_F1": 0.58,
+      "per_class": {
+        "WSSV": {
+          "P": 0.556,
+          "R": 0.5,
+          "F1": 0.526,
+          "TP": 5,
+          "FP": 4,
+          "FN": 5
+        },
+        "BlackGillDisease": {
+          "P": 0.875,
+          "R": 0.7,
+          "F1": 0.778,
+          "TP": 7,
+          "FP": 1,
+          "FN": 3
+        },
+        "Healthy": {
+          "P": 0.385,
+          "R": 0.5,
+          "F1": 0.435,
+          "TP": 5,
+          "FP": 8,
+          "FN": 5
+        }
+      }
+    },
+    "YOLO+Ontology": {
+      "accuracy": 0.6,
+      "macro_P": 0.775,
+      "macro_R": 0.6,
+      "macro_F1": 0.57,
+      "per_class": {
+        "WSSV": {
+          "P": 1.0,
+          "R": 0.2,
+          "F1": 0.333,
+          "TP": 2,
+          "FP": 0,
+          "FN": 8
+        },
+        "BlackGillDisease": {
+          "P": 0.875,
+          "R": 0.7,
+          "F1": 0.778,
+          "TP": 7,
+          "FP": 1,
+          "FN": 3
+        },
+        "Healthy": {
+          "P": 0.45,
+          "R": 0.9,
+          "F1": 0.6,
+          "TP": 9,
+          "FP": 11,
+          "FN": 1
+        }
+      }
+    }
+  },
+  "records": [
+    {
+      "image": "IMG-20240414-WA0035.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0036.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.6158
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0037.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.6661
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0045.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.3612
+        },
+        {
+          "class": "black_gill",
+          "confidence": 0.2638
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0046.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.3354
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0049.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0108.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0110.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.5565
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0162.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.4841
+        },
+        {
+          "class": "black_gill",
+          "confidence": 0.4258
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0189.jpg",
+      "folder": "Black Gill",
+      "gt": "BlackGillDisease",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.5282
+        },
+        {
+          "class": "black_gill",
+          "confidence": 0.4909
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240414-WA0015.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.5658
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.5345
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4801
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4388
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3097
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "WSSV"
+    },
+    {
+      "image": "IMG-20240414-WA0018.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.4823
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3743
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3563
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.301
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2936
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2846
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2786
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.277
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2504
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0022.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0030.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0034.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.2825
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0047.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240414-WA0196.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.5713
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.486
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4366
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4199
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4187
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3693
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3248
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2704
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2502
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "WSSV"
+    },
+    {
+      "image": "IMG-20240414-WA0228.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.4996
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.4186
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240421-WA0043.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240421-WA0106.jpg",
+      "folder": "WSSV",
+      "gt": "WSSV",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0005.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0006.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.3725
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2746
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0007.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.4675
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3302
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.3041
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2956
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0010.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [
+        {
+          "class": "black_gill",
+          "confidence": 0.542
+        }
+      ],
+      "pred_yolo": "BlackGillDisease",
+      "pred_heuristic": "BlackGillDisease",
+      "pred_ontology": "BlackGillDisease"
+    },
+    {
+      "image": "IMG-20240624-WA0011.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.4873
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2748
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2744
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0018.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0019.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0020.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [
+        {
+          "class": "white_spot",
+          "confidence": 0.294
+        },
+        {
+          "class": "white_spot",
+          "confidence": 0.2787
+        }
+      ],
+      "pred_yolo": "WSSV",
+      "pred_heuristic": "WSSV",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0027.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    },
+    {
+      "image": "IMG-20240624-WA0031.jpg",
+      "folder": "Healthy",
+      "gt": "Healthy",
+      "detections": [],
+      "pred_yolo": "Healthy",
+      "pred_heuristic": "Healthy",
+      "pred_ontology": "Healthy"
+    }
+  ]
+}

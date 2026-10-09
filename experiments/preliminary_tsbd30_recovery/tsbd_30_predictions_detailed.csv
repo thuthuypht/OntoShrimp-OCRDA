@@ -1,0 +1,31 @@
+image_id,folder,true_label,yolo_only_pred,yolo_heuristic_pred,yolo_ontology_pred,detections_json
+IMG-20240414-WA0035.jpg,Black Gill,BlackGillDisease,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0036.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.6158}]"
+IMG-20240414-WA0037.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.6661}]"
+IMG-20240414-WA0045.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.3612},{""class"":""black_gill"",""confidence"":0.2638}]"
+IMG-20240414-WA0046.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.3354}]"
+IMG-20240414-WA0049.jpg,Black Gill,BlackGillDisease,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0108.jpg,Black Gill,BlackGillDisease,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0110.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.5565}]"
+IMG-20240414-WA0162.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.4841},{""class"":""black_gill"",""confidence"":0.4258}]"
+IMG-20240414-WA0189.jpg,Black Gill,BlackGillDisease,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.5282},{""class"":""black_gill"",""confidence"":0.4909}]"
+IMG-20240414-WA0015.jpg,WSSV,WSSV,WSSV,WSSV,WSSV,"[{""class"":""white_spot"",""confidence"":0.5658},{""class"":""white_spot"",""confidence"":0.5345},{""class"":""white_spot"",""confidence"":0.4801},{""class"":""white_spot"",""confidence"":0.4388},{""class"":""white_spot"",""confidence"":0.3097}]"
+IMG-20240414-WA0018.jpg,WSSV,WSSV,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.4823},{""class"":""white_spot"",""confidence"":0.3743},{""class"":""white_spot"",""confidence"":0.3563},{""class"":""white_spot"",""confidence"":0.301},{""class"":""white_spot"",""confidence"":0.2936},{""class"":""white_spot"",""confidence"":0.2846},{""class"":""white_spot"",""confidence"":0.2786},{""class"":""white_spot"",""confidence"":0.277},{""class"":""white_spot"",""confidence"":0.2504}]"
+IMG-20240414-WA0022.jpg,WSSV,WSSV,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0030.jpg,WSSV,WSSV,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0034.jpg,WSSV,WSSV,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.2825}]"
+IMG-20240414-WA0047.jpg,WSSV,WSSV,Healthy,Healthy,Healthy,[]
+IMG-20240414-WA0196.jpg,WSSV,WSSV,WSSV,WSSV,WSSV,"[{""class"":""white_spot"",""confidence"":0.5713},{""class"":""white_spot"",""confidence"":0.486},{""class"":""white_spot"",""confidence"":0.4366},{""class"":""white_spot"",""confidence"":0.4199},{""class"":""white_spot"",""confidence"":0.4187},{""class"":""white_spot"",""confidence"":0.3693},{""class"":""white_spot"",""confidence"":0.3248},{""class"":""white_spot"",""confidence"":0.2704},{""class"":""white_spot"",""confidence"":0.2502}]"
+IMG-20240414-WA0228.jpg,WSSV,WSSV,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.4996},{""class"":""white_spot"",""confidence"":0.4186}]"
+IMG-20240421-WA0043.jpg,WSSV,WSSV,Healthy,Healthy,Healthy,[]
+IMG-20240421-WA0106.jpg,WSSV,WSSV,Healthy,Healthy,Healthy,[]
+IMG-20240624-WA0005.jpg,Healthy,Healthy,Healthy,Healthy,Healthy,[]
+IMG-20240624-WA0006.jpg,Healthy,Healthy,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.3725},{""class"":""white_spot"",""confidence"":0.2746}]"
+IMG-20240624-WA0007.jpg,Healthy,Healthy,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.4675},{""class"":""white_spot"",""confidence"":0.3302},{""class"":""white_spot"",""confidence"":0.3041},{""class"":""white_spot"",""confidence"":0.2956}]"
+IMG-20240624-WA0010.jpg,Healthy,Healthy,BlackGillDisease,BlackGillDisease,BlackGillDisease,"[{""class"":""black_gill"",""confidence"":0.542}]"
+IMG-20240624-WA0011.jpg,Healthy,Healthy,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.4873},{""class"":""white_spot"",""confidence"":0.2748},{""class"":""white_spot"",""confidence"":0.2744}]"
+IMG-20240624-WA0018.jpg,Healthy,Healthy,Healthy,Healthy,Healthy,[]
+IMG-20240624-WA0019.jpg,Healthy,Healthy,Healthy,Healthy,Healthy,[]
+IMG-20240624-WA0020.jpg,Healthy,Healthy,WSSV,WSSV,Healthy,"[{""class"":""white_spot"",""confidence"":0.294},{""class"":""white_spot"",""confidence"":0.2787}]"
+IMG-20240624-WA0027.jpg,Healthy,Healthy,Healthy,Healthy,Healthy,[]
+IMG-20240624-WA0031.jpg,Healthy,Healthy,Healthy,Healthy,Healthy,[]
